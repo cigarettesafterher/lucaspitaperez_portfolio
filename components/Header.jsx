@@ -1,5 +1,8 @@
 import Link from 'next/link';
-const Header = () => { ;
+
+const Header = () => {
+  // eslint-disable-next-line no-extra-semi
+  ;
 
   return (
     <div className="hidden md:block container mx-auto px-10 mb-2">
@@ -7,7 +10,7 @@ const Header = () => { ;
         <div className="md:float-left block ">
           <Link href="/">
             <span className="hidden md:block cursor-pointer font-regular text-xs text-black">
-              <div > Looks like you have made it to my corner of the internet.
+              <div> Looks like you have made it to my corner of the internet.
               </div>
               <div>
                 This website is being updated incrementally.
@@ -18,20 +21,20 @@ const Header = () => { ;
             </span>
           </Link>
         </div>
-        <div >
+        <div>
           <Link href="/">
             <span className=" pl-5 md:float-right cursor-pointer font-regular text-xs text-black">
-              <div >resume
+              <div>resume
               </div>
             </span>
 
           </Link>
         </div>
 
-        <div >
+        <div>
           <Link href="/posts">
             <span className=" pl-5 md:float-right cursor-pointer font-regular text-xs text-black">
-              <div >posts
+              <div>posts
               </div>
             </span>
 
@@ -41,7 +44,7 @@ const Header = () => { ;
         <div>
           <Link href="/">
             <span className=" pl-5 md:float-right cursor-pointer font-regular text-xs text-black">
-              <div > proyects
+              <div> proyects
               </div>
             </span>
 

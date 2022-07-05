@@ -13,7 +13,7 @@ const FeaturedPostCard = ({ post }) => (
       <div className="absolute rounded-lg bg-center bg-gradient-to-b opacity-10 from-gray-400 via-gray-700 to-black w-full h-40" />
       {' '}
       <div className="flex flex-col rounded-lg p-4 items-center justify-center absolute w-full h-full">
-      {' '}
+        {' '}
       </div>
       <Link href={`/post/${post.slug}`}><span className="cursor-pointer absolute w-full h-full" /></Link>
       <span className="text-gray-400 mb-4  font-medium text-small text-center">{post.title}</span>
