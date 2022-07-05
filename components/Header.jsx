@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
-
 import Link from 'next/link';
-import { getCategories } from '../services';
-
-const Header = () => {;
+const Header = () => {
+  ;
 
   return (
     <div className="hidden md:block container mx-auto px-10 mb-2">
