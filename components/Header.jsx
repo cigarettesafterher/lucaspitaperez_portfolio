@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const Header = () => {
+function Header() {
   // eslint-disable-next-line no-extra-semi
   ;
 
@@ -56,6 +56,6 @@ const Header = () => {
     </div>
 
   );
-};
+}
 
 export default Header;
