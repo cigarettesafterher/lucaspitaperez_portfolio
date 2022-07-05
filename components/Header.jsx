@@ -1,5 +1,5 @@
 import Link from 'next/link';
-const Header = () => {;
+const Header = () => { ;
 
   return (
     <div className="hidden md:block container mx-auto px-10 mb-2">
