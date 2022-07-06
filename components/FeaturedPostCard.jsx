@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 function FeaturedPostCard({ post }) {
   return (
-    <div className="bg-white shadow-lg rounded-2xl  pl-3 pt-3 pr-3  pb-1 mb-8">
+    <div className="transition duration-500 ease transform hover:-translate-y-1 bg-white shadow-lg rounded-2xl  pl-3 pt-3 pr-3  pb-1 mb-8">
       <Link href={`/post/${post.slug}`}><span className="cursor-pointer absolute w-full h-full" /></Link>
 
       <div className="relative h-40 overflow-hidden pb-20 mb-6">
