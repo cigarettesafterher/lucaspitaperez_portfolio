@@ -8,16 +8,16 @@ function PostCard({ post }) {
   return (
     <Link href={`/post/${post.slug}`}>
 
-      <div className="transition duration-500 ease transform hover:-translate-y-1 bg-white shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8 cursor-pointer">
+      <div className="transition duration-500 ease transform hover:-translate-y-1 lg:w-3/4 bg-white shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8 cursor-pointer">
         <div className="relative overflow-hidden shadow-md pb-80 mb-6">
           <img src={post.featuredImage.url} alt="" className="object-top absolute h-80 w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg" />
         </div>
 
-        <h1 className="transition duration-700 text-center mb-8 cursor-pointer hover:text-gray-200 text-3xl font-semibold">
+        <h1 className="transition duration-700 text-center mb-8 cursor-pointer hover:text-gray-200 text-3xl font-light">
           <Link href={`/post/${post.slug}`}>{post.title}</Link>
         </h1>
         <div className="block lg:flex text-center items-center justify-center mb-8 w-full">
-          <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8 ">
+          <div className="hidden items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8 ">
             <Image
               unoptimized
               loader={grpahCMSImageLoader}
@@ -27,14 +27,14 @@ function PostCard({ post }) {
               className="align-middle rounded-full"
               src={post.author.photo.url}
             />
-            <p className="inline align-middle text-gray-700 ml-2 font-medium text-lg">{post.author.name}</p>
+            <p className="hidden  align-middle text-gray-700 ml-2 font-light text-lg">{post.author.name}</p>
           </div>
-          <div className="font-medium text-gray-500">
+          <div className="font-light text-gray-500">
 
             <span className="align-middle">{moment(post.createdAt).format('MMM DD, YYYY')}</span>
           </div>
         </div>
-        <p className="text-center text-lg text-gray-700 font-normal px-4 lg:px-20 mb-8">
+        <p className="text-center text-lg text-gray-700 font-ligth px-4 lg:px-20 mb-8">
           {post.excerpt}
         </p>
         <div className="hidden text-center">
