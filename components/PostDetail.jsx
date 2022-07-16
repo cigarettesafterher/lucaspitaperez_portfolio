@@ -43,8 +43,8 @@ function PostDetail({ post }) {
   };
 
   return (
-    <div className=" lg:w-3/4 lg:p-7 pb-12 mb-8">
-      <div className="hidden relative overflow-hidden shadow-md mb-6">
+    <div className="lg:w-3/4 lg:p-7 pb-12 mb-8">
+      <div className="hidden relative shadow-md mb-6">
         <img src={post.featuredImage.url} alt="" className="object-top h-full w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg" />
       </div>
       <div className="px-4 lg:px-20">
