@@ -30,17 +30,6 @@ function Header() {
 
           </Link>
         </div>
-
-        <div>
-          <Link href="/posts">
-            <span className=" pl-5 md:float-right cursor-pointer font-regular text-xs text-black">
-              <div>posts
-              </div>
-            </span>
-
-          </Link>
-        </div>
-
         <div>
           <Link href="/">
             <span className=" pl-5 md:float-right cursor-pointer font-regular text-xs text-black">
